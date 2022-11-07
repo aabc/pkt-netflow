@@ -1834,7 +1834,7 @@ static struct ctl_path netflow_sysctl_path[] = {
 #endif /* CONFIG_SYSCTL */
 
 /* socket code */
-static void sk_error_report(struct sock *sk)
+void sk_error_report(struct sock *sk)
 {
 	struct pkt_netflow_sock *usock;
 
